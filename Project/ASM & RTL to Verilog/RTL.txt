@@ -1,0 +1,10 @@
+module;RTL_Verilog
+inputs;[31:0]in1,[31:0]in2,S
+outputs;V,[31:0]data_out
+regs;out,[31:0]R1,[31:0]R2,[31:0]R3
+flags;F1=0,F2=0
+((!F1) && S);R1 <- in1,R2 <- in2,R3 <- 0,V <- 0,F1 <- 1,F2 <- 0
+((!F2) && F1 && (R1 > R2));R1 <- R2,R2 <- R1
+(!F2);F2 <- 1
+(F2 && F1 && (R1 > 0));R3 <- R2 + R3,R1 <- R1-1
+(R1 == 0); F1 <- 0, data_out <- R3, V <- 1 
