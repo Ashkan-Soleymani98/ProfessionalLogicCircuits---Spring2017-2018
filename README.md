@@ -1,2 +1,10 @@
 # ProfessionalLogicCircuits---Spring2017-2018
-Professional Logic Circuits, Undergraduate Course (Spring 2017-2018), Sharif University of Technology, Instructor: Prof. Alireza Ejlali
+Professional Logic Circuits <br />
+Undergraduate Course (Spring 2017-2018) <br />
+Sharif University of Technology <br />
+Computer Engineering Department <br />
+Instructor: Prof. Alireza Ejlali <br />s
+Course Project (Python) <br />
+
+Project: <br />
+    Develop automatic Verilog Code Generator from RTL and ASM
